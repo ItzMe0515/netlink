@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetLink Solutions - Professional Networking & IT Support</title>
+    <meta name="description" content="Professional IT networking and support services in Herk-de-Stad, Belgium. Ubiquiti installations, IT support, and technology solutions.">
+    <meta name="keywords" content="IT support, networking, Ubiquiti, Herk-de-Stad, Belgium, technology">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="assets/images/logo/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="#2563eb" stroke-width="2" fill="none"/>
+                    <circle cx="15" cy="15" r="3" fill="#2563eb"/>
+                    <circle cx="25" cy="15" r="3" fill="#2563eb"/>
+                    <circle cx="20" cy="25" r="3" fill="#2563eb"/>
+                    <line x1="15" y1="15" x2="25" y2="15" stroke="#2563eb" stroke-width="2"/>
+                    <line x1="18" y1="18" x2="22" y2="22" stroke="#2563eb" stroke-width="2"/>
+                    <line x1="22" y1="18" x2="18" y2="22" stroke="#2563eb" stroke-width="2"/>
+                </svg>
+                <span class="logo__text">NetLink Solutions</span>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav__link" data-en="Home" data-nl="Home">Home</a>
+                <a href="#about" class="nav__link" data-en="About" data-nl="Over">About</a>
+                <a href="#services" class="nav__link" data-en="Services" data-nl="Diensten">Services</a>
+                <a href="#portfolio" class="nav__link" data-en="Portfolio" data-nl="Portfolio">Portfolio</a>
+                <a href="#contact" class="nav__link" data-en="Contact" data-nl="Contact">Contact</a>
+            </nav>
+            <div class="language-toggle">
+                <button class="language-toggle__btn" data-lang="en">EN</button>
+                <span class="language-toggle__separator">|</span>
+                <button class="language-toggle__btn" data-lang="nl">NL</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero__content">
+            <h1 class="hero__title" data-en="Professional Networking & IT Support in Herk-de-Stad" data-nl="Professionele Netwerk- en IT-ondersteuning in Herk-de-Stad">Professional Networking & IT Support in Herk-de-Stad</h1>
+            <p class="hero__subtitle" data-en="Expert Ubiquiti installations and comprehensive IT support for homes and businesses" data-nl="Expert Ubiquiti installaties en uitgebreide IT-ondersteuning voor particulieren en bedrijven">Expert Ubiquiti installations and comprehensive IT support for homes and businesses</p>
+            <div class="hero__cta">
+                <a href="#contact" class="btn btn--primary" data-en="Get Quote" data-nl="Offerte Aanvragen">Get Quote</a>
+                <a href="#services" class="btn btn--outline" data-en="Our Services" data-nl="Onze Diensten">Our Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="about__content">
+            <h2 class="about__title" data-en="About Joren" data-nl="Over Joren">About Joren</h2>
+            <div class="about__grid">
+                <div class="about__text">
+                    <p data-en="At just 19 years old, I bring passion and expertise to every IT project I undertake. Currently studying Applied Computer Science at PXL University, I combine my academic knowledge with practical experience I've gained working at SERIS/Huntsman." data-nl="Op slechts 19 jaar oud breng ik passie en expertise naar elk IT-project dat ik onderneem. Momenteel studeer ik Toegepaste Informatica aan PXL Hogeschool, waarbij ik mijn academische kennis combineer met praktische ervaring die ik heb opgedaan bij SERIS/Huntsman.">At just 19 years old, I bring passion and expertise to every IT project I undertake. Currently studying Applied Computer Science at PXL University, I combine my academic knowledge with practical experience I've gained working at SERIS/Huntsman.</p>
+                    <p data-en="Specializing in Ubiquiti network solutions and comprehensive IT support, I provide reliable, professional service to both residential and business clients throughout Herk-de-Stad and surrounding areas." data-nl="Gespecialiseerd in Ubiquiti netwerkoplossingen en uitgebreide IT-ondersteuning, bied ik betrouwbare, professionele service aan zowel particuliere als zakelijke klanten in Herk-de-Stad en omgeving.">Specializing in Ubiquiti network solutions and comprehensive IT support, I provide reliable, professional service to both residential and business clients throughout Herk-de-Stad and surrounding areas.</p>
+                </div>
+                <div class="about__stats">
+                    <div class="stat">
+                        <span class="stat__number">2+</span>
+                        <span class="stat__label" data-en="Years Experience" data-nl="Jaar Ervaring">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">50+</span>
+                        <span class="stat__label" data-en="Projects Completed" data-nl="Projecten Voltooid">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">24/7</span>
+                        <span class="stat__label" data-en="Emergency Support" data-nl="Noodondersteuning">Emergency Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2 class="services__title" data-en="Our Services" data-nl="Onze Diensten">Our Services</h2>
+        <div class="services__grid">
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="20" width="32" height="8" rx="2" fill="#2563eb"/>
+                        <circle cx="16" cy="24" r="2" fill="white"/>
+                        <circle cx="24" cy="24" r="2" fill="white"/>
+                        <circle cx="32" cy="24" r="2" fill="white"/>
+                        <path d="M12 20V16C12 14.8954 12.8954 14 14 14H34C35.1046 14 36 14.8954 36 16V20" stroke="#2563eb" stroke-width="2"/>
+                        <path d="M12 28V32C12 33.1046 12.8954 34 14 34H34C35.1046 34 36 33.1046 36 32V28" stroke="#2563eb" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="service-card__title" data-en="Ubiquiti Network Installation" data-nl="Ubiquiti Netwerkinstallatie">Ubiquiti Network Installation</h3>
+                <p class="service-card__price" data-en="€50-65/hour + device costs" data-nl="€50-65/uur + apparaatkosten">€50-65/hour + device costs</p>
+                <ul class="service-card__features">
+                    <li data-en="Home network setup" data-nl="Thuisnetwerkinstallatie">Home network setup</li>
+                    <li data-en="Business network installation" data-nl="Bedrijfsnetwerkinstallatie">Business network installation</li>
+                    <li data-en="Access control systems" data-nl="Toegangscontrolesystemen">Access control systems</li>
+                    <li data-en="Security camera installation" data-nl="Beveiligingscamera-installatie">Security camera installation</li>
+                    <li data-en="Network optimization" data-nl="Netwerkoptimalisatie">Network optimization</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="8" width="32" height="24" rx="2" fill="#f8fafc" stroke="#2563eb" stroke-width="2"/>
+                        <rect x="12" y="12" width="24" height="16" rx="1" fill="#2563eb"/>
+                        <rect x="18" y="36" width="12" height="4" rx="2" fill="#64748b"/>
+                        <path d="M16 40H32" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="service-card__title" data-en="General IT Support" data-nl="Algemene IT-ondersteuning">General IT Support</h3>
+                <p class="service-card__price" data-en="€20-35/hour" data-nl="€20-35/uur">€20-35/hour</p>
+                <ul class="service-card__features">
+                    <li data-en="Phone setup and migration" data-nl="Telefoon setup en migratie">Phone setup and migration</li>
+                    <li data-en="Technology purchasing advice" data-nl="Technologie aankoopadvies">Technology purchasing advice</li>
+                    <li data-en="Device troubleshooting" data-nl="Apparaat probleemoplossing">Device troubleshooting</li>
+                    <li data-en="New technology setup" data-nl="Nieuwe technologie setup">New technology setup</li>
+                    <li data-en="Basic laptop repairs" data-nl="Basis laptop reparaties">Basic laptop repairs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing">
+    <div class="container">
+        <h2 class="pricing__title" data-en="Pricing" data-nl="Prijzen">Pricing</h2>
+        <div class="pricing__grid">
+            <div class="pricing-card">
+                <h3 data-en="Installation Services" data-nl="Installatiediensten">Installation Services</h3>
+                <p class="pricing-card__price" data-en="€50-65/hour" data-nl="€50-65/uur">€50-65/hour</p>
+            </div>
+            <div class="pricing-card">
+                <h3 data-en="IT Support" data-nl="IT-ondersteuning">IT Support</h3>
+                <p class="pricing-card__price" data-en="€20-35/hour" data-nl="€20-35/uur">€20-35/hour</p>
+            </div>
+            <div class="pricing-card">
+                <h3 data-en="Device Installation" data-nl="Apparaat Installatie">Device Installation</h3>
+                <p class="pricing-card__price" data-en="€20-45 per device" data-nl="€20-45 per apparaat">€20-45 per device</p>
+            </div>
+            <div class="pricing-card">
+                <h3 data-en="Emergency Support" data-nl="Noodondersteuning">Emergency Support</h3>
+                <p class="pricing-card__price" data-en="€60-80/hour" data-nl="€60-80/uur">€60-80/hour</p>
+            </div>
+        </div>
+        <p class="pricing__note" data-en="Package deals available for multiple services" data-nl="Pakketdeals beschikbaar voor meerdere diensten">Package deals available for multiple services</p>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2 class="portfolio__title" data-en="Portfolio" data-nl="Portfolio">Portfolio</h2>
+        <div class="portfolio__grid">
+            <div class="portfolio-card">
+                <div class="portfolio-card__image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="8" fill="#e2e8f0"/>
+                            <path d="M20 25L30 35L40 25" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="portfolio-card__content">
+                    <h3 data-en="Home Network Setup" data-nl="Thuisnetwerk Setup">Home Network Setup</h3>
+                    <p data-en="Complete Ubiquiti UniFi installation for residential client" data-nl="Volledige Ubiquiti UniFi installatie voor particuliere klant">Complete Ubiquiti UniFi installation for residential client</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card__image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="8" fill="#e2e8f0"/>
+                            <path d="M20 25L30 35L40 25" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="portfolio-card__content">
+                    <h3 data-en="Business Network Infrastructure" data-nl="Bedrijfsnetwerk Infrastructuur">Business Network Infrastructure</h3>
+                    <p data-en="Enterprise-grade network deployment for small business" data-nl="Professionele netwerkimplementatie voor kleine onderneming">Enterprise-grade network deployment for small business</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card__image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="8" fill="#e2e8f0"/>
+                            <path d="M20 25L30 35L40 25" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="portfolio-card__content">
+                    <h3 data-en="Security Camera System" data-nl="Beveilgingscamera Systeem">Security Camera System</h3>
+                    <p data-en="IP camera installation with remote monitoring capabilities" data-nl="IP camera installatie met mogelijkheid tot externe monitoring">IP camera installation with remote monitoring capabilities</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card__image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="8" fill="#e2e8f0"/>
+                            <path d="M20 25L30 35L40 25" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="portfolio-card__content">
+                    <h3 data-en="Access Control Implementation" data-nl="Toegangscontrole Implementatie">Access Control Implementation</h3>
+                    <p data-en="Modern access control system for office building" data-nl="Modern toegangscontrolesysteem voor kantoorgebouw">Modern access control system for office building</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="testimonials__title" data-en="Customer Testimonials" data-nl="Klantbeoordelingen">Customer Testimonials</h2>
+        <div class="testimonials__grid">
+            <div class="testimonial-card">
+                <div class="testimonial-card__stars">★★★★★</div>
+                <p class="testimonial-card__text" data-en="Excellent service! Joren installed our home network perfectly and explained everything clearly. Highly recommend!" data-nl="Uitstekende service! Joren heeft ons thuisnetwerk perfect geïnstalleerd en alles duidelijk uitgelegd. Zeer aanbevolen!">"Excellent service! Joren installed our home network perfectly and explained everything clearly. Highly recommend!"</p>
+                <div class="testimonial-card__author">
+                    <span class="testimonial-card__name">— Jan DK.</span>
+                    <span class="testimonial-card__location">Nieuwerkerken</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-card__stars">★★★★★</div>
+                <p class="testimonial-card__text" data-en="Professional and reliable. Our business network has been running flawlessly since Joren's installation." data-nl="Professioneel en betrouwbaar. Ons bedrijfsnetwerk draait vlekkeloos sinds Joren's installatie.">"Professional and reliable. Our business network has been running flawlessly since Joren's installation."</p>
+                <div class="testimonial-card__author">
+                    <span class="testimonial-card__name">— Koen DK.</span>
+                    <span class="testimonial-card__location" data-en="Local Business Owner" data-nl="Lokale Ondernemer">Local Business Owner</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-card__stars">★★★★★</div>
+                <p class="testimonial-card__text" data-en="Quick response for emergency support. Joren solved our IT issues efficiently and at a fair price." data-nl="Snelle reactie voor noodondersteuning. Joren loste onze IT-problemen efficiënt op tegen een eerlijke prijs.">"Quick response for emergency support. Joren solved our IT issues efficiently and at a fair price."</p>
+                <div class="testimonial-card__author">
+                    <span class="testimonial-card__name">— Jan DK.</span>
+                    <span class="testimonial-card__location">Nieuwerkerken</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+    <div class="container">
+        <h2 class="faq__title" data-en="Frequently Asked Questions" data-nl="Veelgestelde Vragen">Frequently Asked Questions</h2>
+        <div class="faq__list">
+            <div class="faq-item">
+                <button class="faq-item__question">
+                    <span data-en="What areas do you serve?" data-nl="Welke gebieden bedient u?">What areas do you serve?</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p data-en="We primarily serve Herk-de-Stad and surrounding areas including Hasselt, Diepenbeek, and nearby municipalities." data-nl="We bedienen voornamelijk Herk-de-Stad en omliggende gebieden waaronder Hasselt, Diepenbeek en nabijgelegen gemeenten.">We primarily serve Herk-de-Stad and surrounding areas including Hasselt, Diepenbeek, and nearby municipalities.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-item__question">
+                    <span data-en="Do you offer emergency support?" data-nl="Biedt u noodondersteuning?">Do you offer emergency support?</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p data-en="Yes, we provide 24/7 emergency support at €90-110/hour for critical IT issues that cannot wait." data-nl="Ja, we bieden 24/7 noodondersteuning aan tegen €90-110/uur voor kritieke IT-problemen die niet kunnen wachten.">Yes, we provide 24/7 emergency support at €90-110/hour for critical IT issues that cannot wait.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-item__question">
+                    <span data-en="What brands do you work with?" data-nl="Met welke merken werkt u?">What brands do you work with?</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p data-en="We specialize in Ubiquiti networking equipment. We'll recommend the best solution for your needs and budget." data-nl="We zijn gespecialiseerd in Ubiquiti netwerkapparatuur. We adviseren de beste oplossing voor uw behoeften en budget.">We specialize in Ubiquiti networking equipment. We'll recommend the best solution for your needs and budget.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-item__question">
+                    <span data-en="How do I get a quote?" data-nl="Hoe krijg ik een offerte?">How do I get a quote?</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p data-en="Simply fill out our contact form below or call us directly. We'll discuss your requirements and provide a detailed quote within 24 hours." data-nl="Vul eenvoudig ons contactformulier hieronder in of bel ons direct. We bespreken uw eisen en verstrekken binnen 24 uur een gedetailleerde offerte.">Simply fill out our contact form below or call us directly. We'll discuss your requirements and provide a detailed quote within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="contact__title" data-en="Contact Us" data-nl="Contact">Contact Us</h2>
+        <div class="contact__content">
+            <div class="contact__info">
+                <div class="contact-item">
+                    <h3 data-en="Get in Touch" data-nl="Neem Contact Op">Get in Touch</h3>
+                    <p data-en="Ready to improve your network or solve IT issues? Contact us for a free consultation." data-nl="Klaar om uw netwerk te verbeteren of IT-problemen op te lossen? Neem contact met ons op voor een gratis consult.">Ready to improve your network or solve IT issues? Contact us for a free consultation.</p>
+                </div>
+                <div class="contact-item">
+                    <h4 data-en="Contact Information" data-nl="Contactinformatie">Contact Information</h4>
+                    <p><strong data-en="Address" data-nl="Adres">Address:</strong><br>Hasseltsestraat 9<br>3540 Herk-de-Stad, Belgium</p>
+                    <p><strong data-en="Phone" data-nl="Telefoon">Phone:</strong><br>+32 0475 51 61 90</p>
+                    <p><strong data-en="Email" data-nl="E-mail">Email:</strong><br>jorendk.technologies@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4 data-en="Service Area" data-nl="Servicegebied">Service Area</h4>
+                    <p data-en="Herk-de-Stad and surrounding areas" data-nl="Herk-de-Stad en omliggende gebieden">Herk-de-Stad and surrounding areas</p>
+                    <div id="map" style="width:100%;height:300px;"></div>
+                </div>
+            </div>
+            <div class="contact__form">
+                <form class="quote-form" id="quoteForm" method="POST" action="https://api.web3forms.com/submit">
+                    <input type="hidden" name="access_key" value="ca2965f7-c69d-4d07-a9b6-08ca4ce6b425">
+
+                    <h3 data-en="Request a Quote" data-nl="Offerte Aanvragen">Request a Quote</h3>
+
+                    <div class="form-group">
+                        <label for="name" class="form-label" data-en="Name" data-nl="Naam">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label" data-en="Email" data-nl="E-mail">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label" data-en="Phone" data-nl="Telefoon">Phone</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service" class="form-label" data-en="Service Needed" data-nl="Benodigde Service">Service Needed</label>
+                        <select id="service" name="service" class="form-control" required>
+                            <option value="" data-en="Select a service" data-nl="Selecteer een dienst">Select a service</option>
+                            <option value="ubiquiti" data-en="Ubiquiti Network Installation" data-nl="Ubiquiti Netwerkinstallatie">Ubiquiti Network Installation</option>
+                            <option value="it-support" data-en="General IT Support" data-nl="Algemene IT-ondersteuning">General IT Support</option>
+                            <option value="emergency" data-en="Emergency Support" data-nl="Noodondersteuning">Emergency Support</option>
+                            <option value="consultation" data-en="Consultation" data-nl="Consultatie">Consultation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label" data-en="Message" data-nl="Bericht">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Describe your project or requirements..." data-en="Describe your project or requirements..." data-nl="Beschrijf uw project of vereisten..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full-width" data-en="Send Quote Request" data-nl="Offerte Aanvraag Versturen">
+                        Send Quote Request
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h4>NetLink Solutions</h4>
+                <p data-en="Professional IT networking and support services in Belgium." data-nl="Professionele IT-netwerk en ondersteuningsdiensten in België.">Professional IT networking and support services in Belgium.</p>
+            </div>
+            <div class="footer__section">
+                <h4 data-en="Contact" data-nl="Contact">Contact</h4>
+                <p>Hasseltsestraat 9<br>3540 Herk-de-Stad, Belgium</p>
+                <p>+32 0475 51 61 90</p>
+                <p>jorendk.technologies@gmail.com</p>
+            </div>
+            <div class="footer__section">
+                <h4 data-en="Services" data-nl="Diensten">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="#services" data-en="Ubiquiti Installation" data-nl="Ubiquiti Installatie">Ubiquiti Installation</a></li>
+                    <li><a href="#services" data-en="IT Support" data-nl="IT-ondersteuning">IT Support</a></li>
+                    <li><a href="#services" data-en="Network Setup" data-nl="Netwerk Setup">Network Setup</a></li>
+                    <li><a href="#services" data-en="Emergency Support" data-nl="Noodondersteuning">Emergency Support</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h4 data-en="Legal" data-nl="Juridisch">Legal</h4>
+                <p data-en="VAT: BE[Number]" data-nl="BTW: BE[Nummer]">VAT: BE[Number]</p>
+                <p data-en="Business Registration: [Number]" data-nl="Ondernemingsregistratie: [Nummer]">Business Registration: [Number]</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 NetLink Solutions. <span data-en="All rights reserved." data-nl="Alle rechten voorbehouden.">All rights reserved.</span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+    const map = L.map('map').setView([50.940989161180646, 5.16772888017922], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19
+    }).addTo(map);
+    L.marker([50.940989161180646, 5.16772888017922]).addTo(map);
+</script>
+
+</body>
+</html>
